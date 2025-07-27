@@ -59,7 +59,8 @@ const Index = () => {
           <div className="text-center">
             <div className="flex justify-center mb-8">
               <div className="w-24 h-24 gradient-travel rounded-2xl flex items-center justify-center shadow-lg">
-                <Compass className="w-12 h-12 text-white" />
+              <Compass className="w-12 h-12 text-gray-800" />
+
               </div>
             </div>
 
@@ -78,14 +79,14 @@ const Index = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button
+              {/* <Button
                 onClick={() => setShowAuthModal(true)}
                 size="lg"
                 className="gradient-travel text-white hover:opacity-90 px-8 py-6 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all"
               >
                 <Plus className="w-5 h-5 mr-2" />
                 Start Your Journey
-              </Button>
+              </Button> */}
 
               <Button
                 variant="outline"
@@ -94,7 +95,7 @@ const Index = () => {
                 onClick={() => setShowAuthModal(true)}
               >
                 <MapPin className="w-5 h-5 mr-2" />
-                Sign In
+                Start Your Journey
               </Button>
             </div>
           </div>
@@ -103,7 +104,8 @@ const Index = () => {
           <div className="mt-20 grid md:grid-cols-3 gap-8">
             <div className="text-center p-6">
               <div className="w-16 h-16 gradient-travel rounded-xl flex items-center justify-center mx-auto mb-4">
-                <MapPin className="w-8 h-8 text-white" />
+              <MapPin className="w-8 h-8 text-black" />
+
               </div>
               <h3 className="text-xl font-semibold text-slate-800 mb-2">
                 Track Destinations

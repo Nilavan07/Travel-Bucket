@@ -1,6 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./app/**/*.{js,ts,jsx,tsx}", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",      // <- Include if using /pages
+    "./components/**/*.{js,ts,jsx,tsx,mdx}", // <- For components
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",        // <- using /src
+  ],
   theme: {
     extend: {
       colors: {
@@ -10,7 +15,6 @@ module.exports = {
       },
       backgroundImage: {
         "gradient-sunset": "linear-gradient(to right, #ec4899, #f59e0b)",
-
         "gradient-travel": "linear-gradient(to right, #0ea5e9, #6366f1)",
       },
     },
