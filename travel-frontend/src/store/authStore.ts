@@ -26,7 +26,6 @@ interface AuthState {
   deleteAccount: () => Promise<void>;
   updateProfile: (data: Partial<User>) => void;
 
-  // 🔁 Change here: Promise<User[]> instead of Promise<void>
   getAllUsers: () => Promise<User[]>;
 
   deleteUser: (userId: string) => Promise<void>;
