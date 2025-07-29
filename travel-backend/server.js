@@ -16,7 +16,7 @@ connectDB();
 
 // 🔒 Enable CORS for frontend on Vercel
 app.use(cors({
-  origin: "https://travel-bucket-u4xg.vercel.app",
+  origin: "travel-bucket-bviu.vercel.app",
   credentials: true, // Required if frontend uses credentials (cookies, auth headers)
 }));
 
