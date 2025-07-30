@@ -2,9 +2,9 @@
 module.exports = {
   content: [
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",      // <- Include if using /pages
-    "./components/**/*.{js,ts,jsx,tsx,mdx}", // <- For components
-    "./src/**/*.{js,ts,jsx,tsx,mdx}",        // <- using /src
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",      
+    "./components/**/*.{js,ts,jsx,tsx,mdx}", 
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",        
   ],
   theme: {
     extend: {
