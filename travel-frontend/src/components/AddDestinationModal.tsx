@@ -261,7 +261,7 @@ const AddDestinationModal: React.FC<AddDestinationModalProps> = ({
               />
             </div>
             <div className="space-y-2">
-              <Label htmlFor="longitude">Longitude</Label>
+              <Label htmlFor="longitude">Longitude *</Label>
               <Input
                 id="longitude"
                 type="number"
@@ -277,6 +277,7 @@ const AddDestinationModal: React.FC<AddDestinationModalProps> = ({
                     },
                   })
                 }
+                required
               />
             </div>
           </div>
