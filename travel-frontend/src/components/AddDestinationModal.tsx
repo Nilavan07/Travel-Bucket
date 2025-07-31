@@ -213,7 +213,7 @@ const AddDestinationModal: React.FC<AddDestinationModalProps> = ({
 
           {/* Image URL */}
           <div className="space-y-2">
-            <Label htmlFor="imageUrl">Image URL</Label>
+            <Label htmlFor="imageUrl">Image URL *</Label>
             <Input
               id="imageUrl"
               type="url"
@@ -241,7 +241,7 @@ const AddDestinationModal: React.FC<AddDestinationModalProps> = ({
           {/* Coordinates */}
           <div className="grid grid-cols-2 gap-4">
             <div className="space-y-2">
-              <Label htmlFor="latitude">Latitude</Label>
+              <Label htmlFor="latitude">Latitude *</Label>
               <Input
                 id="latitude"
                 type="number"
@@ -257,6 +257,7 @@ const AddDestinationModal: React.FC<AddDestinationModalProps> = ({
                     },
                   })
                 }
+                required
               />
             </div>
             <div className="space-y-2">
