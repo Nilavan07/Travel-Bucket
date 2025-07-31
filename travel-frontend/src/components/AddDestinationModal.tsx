@@ -222,6 +222,7 @@ const AddDestinationModal: React.FC<AddDestinationModalProps> = ({
               onChange={(e) =>
                 setFormData({ ...formData, imageUrl: e.target.value })
               }
+              required
             />
             {formData.imageUrl && (
               <div className="mt-2">
